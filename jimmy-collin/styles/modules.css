@@ -15,8 +15,8 @@
   margin: 0;
 }
 
-.main-nav {
-  font-size: 4vw;
+.main-nav:hover li{
+  display: block;
 }
 
 .main-nav ul {
@@ -26,7 +26,54 @@
 }
 
 .main-nav li {
+  font-size: 4vw;
+  display: none;
   width: 93%;
   padding: 2vw;
   border-bottom: 1px solid silver;
+}
+
+.byline {
+  font-size: 4vw;
+  color: gray;
+}
+
+address {
+  font-weight: bold;
+}
+
+address, time {
+  display:inline;
+}
+
+@media only screen and (min-width: 640px) {
+
+  .heading-group-h1 h1 {
+    padding: 2.4vw 0vw 1vw 0vw;
+    margin: 0vw;
+  }
+  
+  .icon-menu {
+    display:none;
+  }
+
+  .main-nav ul {
+    padding: 0 0 2vw 0;
+    margin-left: 2vw;
+  }
+
+  .main-nav li {
+    font-size: 2.5vw;
+    display:inline;
+    border-bottom: none;
+    padding: 1vw;
+  }
+
+  .main-nav:hover li{
+    display: inline;
+  }
+
+  .byline {
+    font-size: 1.7vw;
+  }
 }
